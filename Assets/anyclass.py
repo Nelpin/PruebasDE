@@ -6,7 +6,7 @@ class cached_property(object):
         self._factory = factory
 
     def __get__(self, instance, owner):
-        attr base = self._factory(instance)
+        attr_base = self._factory(instance)
 
         setattr(instance, self._attr_name, attr_base)
 
